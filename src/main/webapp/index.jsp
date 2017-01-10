@@ -5,7 +5,7 @@
   long time = System.currentTimeMillis();
   String sessid = String.valueOf(time);
 %>
-<jnlp codebase="http://localhost:8080/forms/java/">
+<jnlp codebase="http://jbp-dev-oas-01.app.arjustice.local:9001/forms/java/">
   <information>
     <title>Webstart Test Oracle Forms 11g</title>
     <vendor>develishdevelopment.wordpress.com</vendor>
@@ -30,7 +30,7 @@
     <param name="latencyCheck" value="true"/>
     <param name="networkRetries" value="240"/>
     <param name="serverArgs" value="module=test.fmx useSDI=yes"/>
-    <param name="serverURL" value="http://localhost:8080/forms/lservlet?ifcfs=http://localhost:8080/forms/frmservlet?config=jpi&ifsessid=formsapp.<%=sessid%>"/>
+    <param name="serverURL" value="http://jbp-dev-oas-01.app.arjustice.local:9001/forms/lservlet?ifcfs=http://jbp-dev-oas-01.app.arjustice.local:9001/forms/frmservlet?config=jpi&ifsessid=formsapp.<%=sessid%>"/>
     <param name="colorScheme" value="teal"/>
     <param name="splashScreen" value="no"/>
     <param name="dontTruncateTabs" value="true"/>
